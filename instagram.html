@@ -1,141 +1,271 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Instagram</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #fafafa;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+<html lang="PT-BR">
+    <head>
+        <title>Site-Andreatta</title>
+    
+        <link rel="stylesheet" type="text/css" href="">
+        <meta charset="utf-8">
+    <script src="jquery.js"></script>
+    <style>
 
-    .container {
-      width: 100%;
-      max-width: 400px;
-      background-color: #fff;
-      border: 1px solid #dbdbdb;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-    }
+            .site{
+                width:1000px ;
+                height: 700px ;
+                background-color: rgb(55, 7, 70);
+                
+            }
+            .um{
+                width: inherit;
+                height: 30px ;
+                background-color:rgb(111, 30, 136); ;
 
-    header {
-      text-align: center;
-      margin-bottom: 20px;
-    }
+            }
+            .dois{
+                width:inherit ;
+                height:100px ;
+                background-color: rgb(129, 16, 163);;
 
-    header h1 {
-      font-family: 'Billabong', cursive;
-      font-size: 36px;
-      margin: 0;
-      color: #262626;
-    }
+            }
+            .tres{
+                width:inherit ;
+                height:34px ;
+                background-color:rgb(95, 18, 119); ;
 
-    section {
-      margin-bottom: 20px;
-    }
+            }
+            .quatro{
+                width:inherit ;
+                height:450px;
+                background-color:rgb(88, 5, 114); ;
+                background-image: url("https://static.corinthians.com.br/uploads/2be5f9c2e3620eb73c2972d7552b6cb5.jpg") ;
 
-    section h2 {
-      margin-bottom: 10px;
-      color: #262626;
-      text-align: center;
-    }
+            }
+            .cinco{
+                width:inherit ;
+                height:30px ;
+                background-color:rgb(64, 2, 82); ;
 
-    form div {
-      margin-bottom: 15px;
-    }
+            }
+            .seis{
+                width:inherit ;
+                height:30px ;
+                background-color:rgb(41, 2, 53); ;
 
-    label {
-      display: block;
-      margin-bottom: 5px;
-      color: #333;
-    }
+            }
+            .sete{
+                width:inherit ;
+                height:30px ;
+                background-color:rgb(0, 0, 0); ;
 
-    input[type="text"],
-    input[type="password"],
-    input[type="email"] {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-sizing: border-box;
-    }
+            }
+            .um1{
+                width:33.3%;
+                height:inherit  ;
+                background-color:rgb(19, 30, 40); ;
+                float:right;
+  
 
-    button {
-      width: 100%;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      background: linear-gradient(to right, #f58529, #dd2a7b, #8134af, #515bd4);
-      color: #fff;
-      font-size: 16px;
-      cursor: pointer;
-    }
+            }
+            .um2{
+                width:33.3% ;
+                height:  inherit;
+                background-color:rgb(80, 80, 70); ;
+                float:right;
+     ;
 
-    button:hover {
-      background: linear-gradient(to right, #f77737, #e1306c, #c13584, #5851db);
-    }
+            }
+            .um3{
+                width: 33.3%;
+                height:  inherit;
+                background-color:rgb(100,50, 60); ;
+                float:right;
 
-    footer {
-      text-align: center;
-      margin-top: 20px;
-      color: #666;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1>Instagram</h1>
-    </header>
-    <main>
-      <section class="login">
-        <h2>Entrar</h2>
-        <form>
-          <div>
-            <label for="username">Nome de Usuário</label>
-            <input type="text" id="username" name="username">
-          </div>
-          <div>
-            <label for="password">Senha</label>
-            <input type="password" id="password" name="password">
-          </div>
-          <button type="submit">Entrar</button>
-        </form>
-      </section>
-      <section class="signup">
-        <h2>Cadastre-se</h2>
-        <form>
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
-          </div>
-          <div>
-            <label for="fullname">Nome Completo</label>
-            <input type="text" id="fullname" name="fullname">
-          </div>
-          <div>
-            <label for="new-username">Nome de Usuário</label>
-            <input type="text" id="new-username" name="new-username">
-          </div>
-          <div>
-            <label for="new-password">Senha</label>
-            <input type="password" id="new-password" name="new-password">
-          </div>
-          <button type="submit">Cadastrar</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2025 Instagram</p>
-    </footer>
-  </div>
-</body>
+
+            }
+            .dois1{
+                width: 10%;
+                height:  inherit;
+                background-image: url("f139dc89e5b1ad0818f612c7f33200a5-removebg-preview.png");
+                float:left;
+                border-radius:100%;
+                margin-left:5% ;
+                
+
+            }
+            .dois2{
+                width: 10%;
+                height:  inherit;
+                background-color:rgb(216, 162, 162); 
+                float:left;
+                border-radius:100%;
+                margin-left:5% ;
+                
+
+            }
+            .dois3{
+                width: 10%;
+                height:  inherit;
+                background-color:rgb(216, 162, 162); 
+                float:left;
+                border-radius:100%;
+                margin-left:5% ;
+                border: solid rgb(255, 0, 212) 2px;
+
+            }
+            .dois4{
+                width: 10%;
+                height:  inherit;
+                background-color:rgb(216, 162, 162); 
+                float:left;
+                border-radius:100%;
+                margin-left:5% ;
+                
+            }
+            .dois5{
+                width: 10%;
+                height:  inherit;
+                background-color:rgb(216, 162, 162); 
+                float:left;
+                border-radius:100%;
+                margin-left:5% ;
+                
+            }
+            .tres1{
+                width:3% ;
+                height:  inherit;
+                background-color:rgb(90, 80, 70);
+                float:left;
+                border-radius:100%;
+            }
+            .tres2{
+                width: 3%;
+                height:  inherit;
+                background-color: rgb(255, 0, 212);
+                float:right;
+               
+
+            }
+            .tres3{
+                width: 33.3%;
+                height:  inherit;
+                background-color:rgb(20, 30, 40);
+                float:right;
+               
+
+            }
+            .cinco1{
+                width: 25%;
+                height: inherit ;
+                background-color:rgb(50, 60, 70);
+                float:right;
+               
+
+            }
+            .cinco2{
+                width: 25%;
+                height:  inherit;
+                background-color:rgb(30, 20, 10);
+                float:right;
+                
+            }
+            .cinco3{
+                width: 25%;
+                height:  inherit;
+                background-color:rgb(238, 238, 238);
+                float:right;
+               
+
+            }
+            .cinco4{
+                width: 25%;
+                height:  inherit;
+                background-color:rgb(150, 71, 71);
+                float:right;
+               
+
+            }
+            .sete1{
+                width: 20%;
+                height:  inherit;
+                background-color:rgb(255, 0, 0);
+                float:right;
+             
+            }
+            .sete2{
+                width: 20%;
+                height:  inherit;
+                background-color:rgb(100,100,10);
+                float:right;
+               
+
+            }
+            .sete3{
+                width:20%;
+                height:  inherit;
+                background-color:rgb(0, 0, 0);
+                float:right;
+              
+
+            }
+            .sete4{
+                width: 20%;
+                height:  inherit;
+                background-color:rgb(10, 10, 10);
+                float:right;
+               
+            }
+            .sete5{
+                width:20%;
+                height:  inherit;
+                background-color:rgb(40, 40, 10);
+                float:right;
+                
+
+            }
+            
+        </style>
+
+    </head>
+
+    <Body>
+        <div class="site">
+            <div class="um">
+                <div class="um1"></div>
+                <pum1>     </pum1>
+                <div class="um2"></div>
+                <div class="um3"></div>
+            </div>
+            <div class="dois">
+                <div class="dois1"></div>
+                <div class="dois2"></div>
+                <div class="dois3"></div>
+                <div class="dois4"></div>
+                <div class="dois5"></div>
+            </div>
+            <div class="tres">
+                <div class="tres1"></div>
+                <div class="tres2"></div>
+                <div class="tres3"></div>
+            </div>
+            <div class="quatro"></div>
+            <div class="cinco">
+                <div class="cinco1"></div>
+                <div class="cinco2"></div>
+                <div class="cinco3"></div>
+                <div class="cinco4"></div>
+            </div>
+            <div class="seis"></div>
+            <div class="sete">
+                <div class="sete1"></div>
+                <div class="sete2"></div>
+                <div class="sete3"></div>
+                <div class="sete4"></div>
+                <div class="sete5"></div>
+            </div>
+        </div>
+        
+
+        
+    </Body>
+
+
 </html>
