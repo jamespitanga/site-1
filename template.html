@@ -1,78 +1,310 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-  <head>
-      <title></title>
-      <link rel="stylesheet" typt="text/css" href="">
-    <meta charset="utf-8">
-    <script scr="jquery.js"></script>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="">
+        <meta charset="utf-8">
+        <script src="jquery.js"></script>
         <style>
             .site{
-                width:940px, 600px, 2px, 0px;
-                height:600px;
+                width:1000px;
+                height:700px;
+                background-color:purple;
             }
-            .header{
+            .um{
                 width:inherit;
-                height:150px;
-                background-color: rgb(70, 200, 189);
-                
+                height:30px;
+                background-color:red;
             }
-            .main{
+            .dois{
                 width:inherit;
-                height:500px;
-                background-color: rgb(70, 174, 200);
-                
+                height:100px;
+                background-color:blue;
             }
-            .footer{
+            .tres{
                 width:inherit;
-                height:140px;
-                background-color: rgb(70, 152, 200);
-                
+                height:30px;
+                background-color:rgb(0, 255, 0);
             }
-            .esquerda{
-                width:100px;
-                height:500px;
+            .quatro{
+                width:inherit;
+                height:450px;
+                background-color:yellow;
+                background-image:url(https://www.google.com/imgres?q=cristiano%20ronaldo&imgurl=https%3A%2F%2Fstartse-uploader.s3.us-east-2.amazonaws.com%2Fmedium_Texto_do_seu_paragrafo_3_5d9584fd88.jpg&imgrefurl=https%3A%2F%2Fwww.startse.com%2Fartigos%2Fcristiano-ronaldo-dos-campos-aos-negocios%2F&docid=Xe8G7hzqmQ_f5M&tbnid=UC3ZNj5cPWaLIM&vet=12ahUKEwiCuv2JwNeMAxVtH7kGHQXNBZYQM3oECE0QAA..i&w=750&h=500&hcb=2&ved=2ahUKEwiCuv2JwNeMAxVtH7kGHQXNBZYQM3oECE0QAA)
+            }
+            .cinco{
+                width:inherit;
+                height:30px;
+                background-color:pink;
+            }
+            .seis{
+                width:inherit;
+                height:30px;
+                background-color:gray;
+            }
+            .sete{
+                width:inherit;
+                height:30px;
+                background-color:black;
+            }
+            .um1{
+                width:20%;
+                height:inherit;
+                background-color:green;
                 display:inline-block;
                 float:left;
-                background-color: rgb(70, 131, 200);
-
             }
-            .direita{
-                width:100px;
-                height:500px;
+            .um2{
+                width:5%;
+                height:inherit;
+                background-color:rgb(9, 9, 97);
+                display:inline-block;
+                float:right;            
+            }
+            .um3{
+                width:5%;
+                height:inherit;
+                background-color:rgb(0, 119, 255);
                 display:inline-block;
                 float:right;
-                background-color: rgb(70, 131, 200);
+            }
+            .dois1{
+                width:10%;
+                height:inherit;
+                background-image:url("");
+                display:inline-block;
+                float:left;
+                border-radius:100%;
+                margin-left:5%;
+            }
+            .dois2{
+                width:10%;
+                height:inherit;
+                background-image:url("");
+                display:inline-block;
+                float:left;
+                border-radius:100%;
+                margin-left:5%;
+            }
+            .dois3{
+                width:10%;
+                height:inherit;
+                background-image:url("");
+                display:inline-block;
+                float:left;
+                border-radius:100%;
+                margin-left:5%;
+            }
+            .dois4{
+                width:10%;
+                height:inherit;
+                background-image:url("");
+                display:inline-block;
+                float:left;
+                border-radius:100%;
+                margin-left:5%;
+            }
+            .dois5{
+                width:10%;
+                height:inherit;
+                background-image:url("");
+                display:inline-block;
+                float:left;
+                border-radius:100%;
+                margin-left:5%;
+            }
+            .tres1{
+                width:30px;
+                height:inherit;
+                background-color:rgb(255, 8, 49);
+                display:inline-block;
+                float:left;
+                border-radius:100%;
+            }
+            .tres2{
+                width:33.3%;
+                height:inherit;
+                background-color:rgb(48, 48, 4);
+                display:inline-block;
+                float:right;
+            }
+            .tres3{
+                width:33.3%;
+                height:inherit;
+                background-color:rgb(94, 69, 69);
+                display:inline-block;
+                float:right;
+            }
+            .cinco1{
+                width:5%;
+                height:inherit;
+                background-color:mediumvioletred;
+                display:inline-block;
+                float:left;
+            }
+            .cinco2{
+                width:5%;
+                height:inherit;
+                background-color:maroon;
+                display:inline-block;
+                float:left;
+            }
+            .cinco3{
+                width:5%;
+                height:inherit;
+                background-color:mediumaquamarine;
+                display:inline-block;
+                float:left;
+            }
+            .cinco4{
+                width:5%;
+                height:inherit;
+                background-color:mediumpurple;
+                display:inline-block;
+                float:right;
+            }
+            .sete1{
+                width:20%;
+                height:inherit;
+                background-color:mediumseagreen;
+                display:inline-block;
+                float:right;
+            }
+            .sete2{
+                width:20%;
+                height:inherit;
+                background-color:brown;
+                display:inline-block;
+                float:right;
+            }
+            .sete3{
+                width:20%;
+                height:inherit;
+                background-color:fuchsia;
+                display:inline-block;
+                float:right;
+            }
+            .sete4{
+                width:20%;
+                height:inherit;
+                background-color:teal;
+                display:inline-block;
+                float:right;
+            }
+            .sete5{
+                width:20%;
+                height:inherit;
+                background-color:olive;
+                display:inline-block;
+                float:right;
+            }
+            .comentario{
+                font-family:arial;
+                font-weight:bold;
+                font-size:25px;
+                color:black;
+            }
+            .pum1{
+                color:;
+                font-family:;
+                font-weight:;
+                font-size:;
+                text-align:;
+                vertical-align:;
+                
+            }
+            .pum2{
 
             }
-             .centro{  
-                width:800px;
-                height:500px;
-                display:inline-block;
-            
+            .pum3{
 
-             }
-             
-                 </style>
-  </head>
- <body>
-    <div class="site">
-        <div class="header">
-
-        </div>
-        <div class="main">
-            <div class="esquerda">
-   
+            }
+        </style>
+    </head>
+    <body>
+        <div class="site">
+            <div class="um">
+                <div class="um1">
+                    <p class="pum1">INSTAGRAM</p>
+                </div>
+                <div class="um2">
+                    <p class="pum2">&#9760;</p>
+                </div>
+                <div class="um3">
+                    <p class="pum3">&#10084;</p>
+                </div>
             </div>
-                <div class="centro">
+            <div class="dois">
+                <div class="dois1">
 
                 </div>
-                <div class="direita">
+                <div class="dois2">
 
                 </div>
-    </div>
-        <div class="footer">
+                <div class="dois3">
+
+                </div>
+                <div class="dois4">
+
+                </div>
+                <div class="dois5">
+
+                </div>
+            </div>
+            <div class="tres">
+                <div class="tres1">
+
+                </div>
+                <div class="tres2">
+
+                </div>
+                <div class="tres3">
+
+                </div>
+            </div>
+            <div class="quatro">
+
+            </div>
+            <div class="cinco">
+                <div class="cinco1">
+
+                </div>
+                <div class="cinco2">
+
+                </div>
+                <div class="cinco3">
+
+                </div>
+                <div class="cinco4">
+
+                </div>
+            </div>
+            <div class="seis">
+                <p class="comentario">
+                    '-yxDuduツ
+                </p>
+                <p>
+                   kakakkk
+                </p>
+            </div>
+            <div class="sete">
+                <div class="sete1">
+
+                </div>
+                <div class="sete2">
+
+                </div>
+                <div class="sete3">
+
+                </div>
+                <div class="sete4">
+
+                </div>
+                <div class="sete5">
+
+                </div>
+            </div>
 
         </div>
-      </div>
- </body>
+    </body>
 </html>
